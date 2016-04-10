@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Headlights</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"></link>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css"></link>
+    <link rel="stylesheet" href="bower_components/angular-bootstrap/ui-bootstrap-csp.css"></link>
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css"></link>
+    <link rel="stylesheet" href="styles/style.css"></link>
+</head>
+
+<body ng-app="myApp" ng-cloak>
+    <div class="main-section text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="custom-square no-styling">
+                        <!--<img src="img/logo.png" alt="" class="img img-responsive">-->
+                        <div class="fb-page" data-href="https://www.facebook.com/men.bg/?fref=nf" data-small-header="false" data-adapt-container-width="true"
+                        data-hide-cover="false" data-show-facepile="true"></div>
+                    </div>
+                    <div class="custom-square">
+                        <div ng-if="">
+                            <i class="fa fa-wrench icon-big"></i>
+                            <span class="block-span">Услуги</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="custom-square">
+                        <i class="fa fa-car icon-big"></i>
+                        <span class="block-span">Продажби</span>
+                    </div>
+                    <div class="custom-square">
+                        <i class="fa fa-users icon-big"></i>
+                        <span class="block-span">За Нас</span>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="custom-square">
+                        <i class="fa fa-map-marker icon-big"></i>
+                        <span class="block-span">Контакти</span>
+                    </div>
+                    <div class="custom-square">
+                        <i class="fa fa-comments icon-big"></i>
+                        <span class="block-span">Новини</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.min.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+
+    <script src="scripts/app.js"></script>
+    <script src="scripts/ctrls/homeCtrl.js"></script>
+
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=1680831985489570";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+</body>
+
+</html>

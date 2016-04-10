@@ -1,0 +1,53 @@
+html, body {
+  height: 100%;
+  background-color: rgb(32, 32, 32);
+  background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0) 20%, rgba(0,0,0,0) 80%, rgba(0,0,0,1)), linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(to bottom, rgb(8, 8, 8), rgb(32, 32, 32));
+  background-size: 100% 100%, 10px 10px, 10px 10px, 10px 5px;
+  background-position: 0px 0px, 0px 0px, 5px 5px, 0px 0px;
+}
+
+.custom-square {
+    border: 1px solid grey;
+    border-radius: 5px;
+    min-height: 15em;
+    height: 15em;
+    color: white;
+    line-height: 15em;
+    vertical-align: middle;
+    text-align: center;
+    margin: 2rem auto;
+    
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#984d2e+0,9f5435+2,9e5334+3,994e2f+4,9a4f30+5,964b2b+5,984d2d+6,974c2c+7,9b5030+8,9a4f2f+9,a15636+11,9f5333+12,a15535+13,9d5131+14,a35737+15,a15535+18,a35737+18,9d5232+19,9b5030+22,984d2d+22,9f5434+25,9f5530+26,a05631+28,9e542f+29,a35934+30,a35934+31,aa5e3a+33,a75b37+34,a75b37+35,ab5f3b+36,ad613d+37,a95e37+39,ac613a+40,aa5f38+42,b1663f+43,ac613a+44,ac613a+46,a95d39+46,aa5e3a+48,af633f+49,a95d39+51,aa5e3a+52,a35934+54,a85e39+55,a55b36+56,a95f3a+57,a05535+62,a35838+64,9b5030+66,a25737+66,a45939+68,aa5f3f+69,a85d3d+71,a05535+73,a25737+75,9c5131+80,a35838+80,9e5333+83,9a4f2f+83,9d5431+87,9b532d+88,a15933+90,a65e38+90,a05535+97,9d5232+97,a15636+100 */
+    background: #984d2e; /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  #984d2e 0%, #9f5435 2%, #9e5334 3%, #994e2f 4%, #9a4f30 5%, #964b2b 5%, #984d2d 6%, #974c2c 7%, #9b5030 8%, #9a4f2f 9%, #a15636 11%, #9f5333 12%, #a15535 13%, #9d5131 14%, #a35737 15%, #a15535 18%, #a35737 18%, #9d5232 19%, #9b5030 22%, #984d2d 22%, #9f5434 25%, #9f5530 26%, #a05631 28%, #9e542f 29%, #a35934 30%, #a35934 31%, #aa5e3a 33%, #a75b37 34%, #a75b37 35%, #ab5f3b 36%, #ad613d 37%, #a95e37 39%, #ac613a 40%, #aa5f38 42%, #b1663f 43%, #ac613a 44%, #ac613a 46%, #a95d39 46%, #aa5e3a 48%, #af633f 49%, #a95d39 51%, #aa5e3a 52%, #a35934 54%, #a85e39 55%, #a55b36 56%, #a95f3a 57%, #a05535 62%, #a35838 64%, #9b5030 66%, #a25737 66%, #a45939 68%, #aa5f3f 69%, #a85d3d 71%, #a05535 73%, #a25737 75%, #9c5131 80%, #a35838 80%, #9e5333 83%, #9a4f2f 83%, #9d5431 87%, #9b532d 88%, #a15933 90%, #a65e38 90%, #a05535 97%, #9d5232 97%, #a15636 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  #984d2e 0%,#9f5435 2%,#9e5334 3%,#994e2f 4%,#9a4f30 5%,#964b2b 5%,#984d2d 6%,#974c2c 7%,#9b5030 8%,#9a4f2f 9%,#a15636 11%,#9f5333 12%,#a15535 13%,#9d5131 14%,#a35737 15%,#a15535 18%,#a35737 18%,#9d5232 19%,#9b5030 22%,#984d2d 22%,#9f5434 25%,#9f5530 26%,#a05631 28%,#9e542f 29%,#a35934 30%,#a35934 31%,#aa5e3a 33%,#a75b37 34%,#a75b37 35%,#ab5f3b 36%,#ad613d 37%,#a95e37 39%,#ac613a 40%,#aa5f38 42%,#b1663f 43%,#ac613a 44%,#ac613a 46%,#a95d39 46%,#aa5e3a 48%,#af633f 49%,#a95d39 51%,#aa5e3a 52%,#a35934 54%,#a85e39 55%,#a55b36 56%,#a95f3a 57%,#a05535 62%,#a35838 64%,#9b5030 66%,#a25737 66%,#a45939 68%,#aa5f3f 69%,#a85d3d 71%,#a05535 73%,#a25737 75%,#9c5131 80%,#a35838 80%,#9e5333 83%,#9a4f2f 83%,#9d5431 87%,#9b532d 88%,#a15933 90%,#a65e38 90%,#a05535 97%,#9d5232 97%,#a15636 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  #984d2e 0%,#9f5435 2%,#9e5334 3%,#994e2f 4%,#9a4f30 5%,#964b2b 5%,#984d2d 6%,#974c2c 7%,#9b5030 8%,#9a4f2f 9%,#a15636 11%,#9f5333 12%,#a15535 13%,#9d5131 14%,#a35737 15%,#a15535 18%,#a35737 18%,#9d5232 19%,#9b5030 22%,#984d2d 22%,#9f5434 25%,#9f5530 26%,#a05631 28%,#9e542f 29%,#a35934 30%,#a35934 31%,#aa5e3a 33%,#a75b37 34%,#a75b37 35%,#ab5f3b 36%,#ad613d 37%,#a95e37 39%,#ac613a 40%,#aa5f38 42%,#b1663f 43%,#ac613a 44%,#ac613a 46%,#a95d39 46%,#aa5e3a 48%,#af633f 49%,#a95d39 51%,#aa5e3a 52%,#a35934 54%,#a85e39 55%,#a55b36 56%,#a95f3a 57%,#a05535 62%,#a35838 64%,#9b5030 66%,#a25737 66%,#a45939 68%,#aa5f3f 69%,#a85d3d 71%,#a05535 73%,#a25737 75%,#9c5131 80%,#a35838 80%,#9e5333 83%,#9a4f2f 83%,#9d5431 87%,#9b532d 88%,#a15933 90%,#a65e38 90%,#a05535 97%,#9d5232 97%,#a15636 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#984d2e', endColorstr='#a15636',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.custom-square.no-styling {
+    background:  none;
+    border: none;
+}
+
+.custom-jumbotron {
+    background: none;
+}
+
+.icon-big {
+    font-size: 3em;
+}
+
+.block-span {
+    font-size: 3em;
+}
+
+.custom-float {
+    float: none;
+    margin: 0 auto;
+}
+
+.main-section {
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
