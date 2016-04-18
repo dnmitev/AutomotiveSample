@@ -8,23 +8,40 @@
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css"></link>
     <link rel="stylesheet" href="bower_components/angular-bootstrap/ui-bootstrap-csp.css"></link>
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css"></link>
+    <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
     <link rel="stylesheet" href="styles/style.css"></link>
 </head>
 
 <body ng-app="myApp" ng-cloak>
-    <div class="main-section text-center">
+    <div class="main-section text-center" ng-controller="HomeCtrl">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
                     <div class="custom-square no-styling">
                         <!--<img src="img/logo.png" alt="" class="img img-responsive">-->
-                        <div class="fb-page" data-href="https://www.facebook.com/men.bg/?fref=nf" data-small-header="false" data-adapt-container-width="true"
+                        <div class="fb-page animated rollIn" data-href="https://www.facebook.com/MercedesBenz/?fref=ts" data-small-header="false" data-adapt-container-width="true"
                         data-hide-cover="false" data-show-facepile="true"></div>
                     </div>
-                    <div class="custom-square">
-                        <div ng-if="">
+                    <div class="custom-square" ng-mouseover="showServicesDetails = true" ng-mouseleave="showServicesDetails = false">
+                        <div class="animated"  ng-if="!showServicesDetails" ng-class="showServicesDetails ? 'fadeOutDown' : 'fadeInUp'">
                             <i class="fa fa-wrench icon-big"></i>
                             <span class="block-span">Услуги</span>
+                        </div>
+                        <div class="animated" ng-if="showServicesDetails"  ng-class="showServicesDetails ? 'fadeInUp' : 'fadeOutDown'">
+                            <div class="details">
+                                <div>
+                                    <a href='/headlights'>Фарове</a>
+                                </div>
+                                <div>
+                                    <a href=''>Рефлектори</a>
+                                </div>
+                                <div>
+                                    <a href=''>Интериорни детайли</a>
+                                </div>
+                                <div>
+                                    <a href=''>Екстериорни детайли</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -59,7 +76,7 @@
     <script src="bower_components/angular-route/angular-route.min.js"></script>
     <script src="bower_components/angular-animate/angular-animate.min.js"></script>
     <script src="bower_components/angular-touch/angular-touch.min.js"></script>
-    <script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
 
     <script src="scripts/app.js"></script>
     <script src="scripts/ctrls/homeCtrl.js"></script>

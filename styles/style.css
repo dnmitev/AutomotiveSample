@@ -6,6 +6,14 @@ html, body {
   background-position: 0px 0px, 0px 0px, 5px 5px, 0px 0px;
 }
 
+#wrapper {
+    margin-top: 70px;
+}
+
+.img-logo {
+    width: 6rem;
+}
+
 .custom-square {
     border: 1px solid grey;
     border-radius: 5px;
@@ -50,4 +58,41 @@ html, body {
 .main-section {
     padding-top: 5em;
     padding-bottom: 5em;
+}
+
+.custom-square  div.details {
+    line-height: normal;
+}
+
+.custom-square  div.details>div  {
+    margin: 2rem;
+}
+
+.custom-square  div.details>div > a {
+    color: white;
+    font-size: 1.5em;
+}
+
+.custom-square  div.details>div > a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.img-sell {
+    width: 100%;
+}
+
+.sell-item {
+    margin: 1em auto;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.sell-item:hover {
+     background-color: slategray;
+}
+
+.sell-item img {
+    text-align: center;
+    vertical-align: middle;
 }

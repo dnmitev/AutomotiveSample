@@ -22,6 +22,7 @@
     "angular-animate": "^1.5.3",
     "angular-touch": "^1.5.3",
     "font-awesome": "^4.5.0",
-    "angular-route": "^1.5.3"
+    "angular-route": "^1.5.3",
+    "animateCSS": "^1.2.1"
   }
 }

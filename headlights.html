@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Headlights</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"></link>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css"></link>
+    <link rel="stylesheet" href="bower_components/angular-bootstrap/ui-bootstrap-csp.css"></link>
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css"></link>
+    <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
+    <link rel="stylesheet" href="styles/style.css"></link>
+</head>
+
+<body ng-app="myApp" ng-controller="SiteCtrl" ng-cloak>
+    <header class="navbar navbar-default navbar-fixed-top navbar-inner">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-3" ng-click="isCollapsed = !isCollapsed">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+                <a class="navbar-brand visible-xs" href="#"><img src="img/logo.png" class="img-responsive img-logo" alt=""></a>
+            </div>
+            <nav class="hidden-xs">
+                <ul class="nav navbar-nav">
+                    <a href="#top" role="button" class="navbar-brand">
+                        <img src="img/logo.png" class="img-responsive img-logo" alt="">
+                    </a>
+                    <li class="dropdown" uib-dropdown="">
+                        <a role="button" class="dropdown-toggle" uib-dropdown-toggle aria-haspopup="true" aria-expanded="false">
+                        Услуги <b class="caret"></b>
+                    </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Фарове</a></li>
+                            <li><a href="#">Рефлектори</a></li>
+                            <li><a href="#">Интериорни детайли</a></li>
+                            <li><a href="#">Екстериорни детайли</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown" uib-dropdown>
+                        <a role="button" class="dropdown-toggle" uib-dropdown-toggle aria-haspopup="true" aria-expanded="false">
+                        Продажби <b class="caret"></b>
+                    </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Фарове</a></li>
+                            <li><a href="#">Автомобили</a></li>
+                            <li><a href="#">Части</a></li>
+                            <li><a href="#">Крушки</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Контакти</a></li>
+                    <li><a href="#">За Нас</a></li>
+                </ul>
+            </nav>
+            <nav class="visible-xs collapse" uib-collapse="!isCollapsed" style="height: 0px;">
+                <ul class="nav navbar-nav">
+                    <li><a href="#getting_started" ng-click="isCollapsed = !isCollapsed">Getting started</a></li>
+                    <li><a href="#directives_small" ng-click="isCollapsed = !isCollapsed">Directives</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div id="wrapper">
+
+        <div class="container">
+            <h2>Try me!</h2>
+            <p>textAngular is a super cool WYSIWYG Text Editor directive for AngularJS</p>
+            <p><b>Features:</b></p>
+            <ol>
+                <li>Automatic Seamless Two-Way-Binding</li>
+                <li style="color: blue;">Super Easy <b>Theming</b> Options</li>
+                <li>Simple Editor Instance Creation</li>
+                <li>Safely Parses Html for Custom Toolbar Icons</li>
+                <li>Doesn't Use an iFrame</li>
+                <li>Works with Firefox, Chrome, and IE8+</li>
+            </ol>
+            <p><b>Code at GitHub:</b> <a href="https://github.com/fraywing/textAngular">Here</a> </p>
+            <p><br/></p>
+            <p><img src="http://www.bmw.com/com/en/insights/technology/technology_guide/articles/_shared/img/mm_adaptive_headlights.jpg"
+                    style="height: 372px;width: 569px;float: right;" /><br/></p>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
+                ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
+                qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+                adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+                voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi
+                ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse
+                quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?<br/></p>
+
+
+        </div>
+
+    </div>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.min.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+
+    <script src="scripts/app.js"></script>
+    <script src="scripts/ctrls/siteCtrl.js"></script>
+
+    <script>
+
+    </script>
+
+</html>
